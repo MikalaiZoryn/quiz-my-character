@@ -261,6 +261,7 @@ export const testQuestions: QuizQuestion[] = [
     question: "Кто ты по масти?",
     options: [{ text: "Чёрт", scores: { imp: 10 } }],
   },
+  { question: "Уверен?", options: [{ text: "Да", scores: { imp: 10 } }] },
 ];
 
 const testResults: QuizResult[] = [
