@@ -292,7 +292,7 @@ const pawPatrolCitizenQuestions: QuizQuestion[] = [
     options: [
       { text: "Собаку", scores: { Ryder: 2, Katie: 1 } },
       { text: "Птичку", scores: { "Mayor Goodway": 2, Chickaletta: 1 } },
-      { text: "Корону", scores: { Swetie: 2, "Mayor Goodway": 1 } },
+      { text: "Корону", scores: { Swetie: 3, "Mayor Goodway": 1 } },
       { text: "Кораблик", scores: { "Captain Paltus": 2, Ryder: 1 } },
       { text: "Игрушку", scores: { Chickaletta: 2, Swetie: 1 } },
       { text: "Сладости", scores: { Chickaletta: 2, "Mayor Goodway": 1 } },
@@ -318,7 +318,7 @@ const pawPatrolCitizenQuestions: QuizQuestion[] = [
         scores: { "Captain Paltus": 2, Chickaletta: 1 },
       },
       { text: "Играть целый день", scores: { Chickaletta: 2, Swetie: 1 } },
-      { text: "Устроить бал", scores: { Swetie: 2, "Mayor Goodway": 1 } },
+      { text: "Устроить бал", scores: { Swetie: 3, "Mayor Goodway": 1 } },
     ],
   },
   {
@@ -330,7 +330,7 @@ const pawPatrolCitizenQuestions: QuizQuestion[] = [
         text: "Исследовать новые места",
         scores: { "Captain Paltus": 2, Chickaletta: 1 },
       },
-      { text: "Красиво одеваться", scores: { Swetie: 2, Chickaletta: 1 } },
+      { text: "Красиво одеваться", scores: { Swetie: 3, Chickaletta: 1 } },
       { text: "Помогать другим", scores: { Ryder: 2, Katie: 1 } },
       {
         text: "Устраивать праздники",
@@ -408,7 +408,7 @@ export const pawPatrolCitizenPriorities = [
   "Ryder",
   "Katie",
   "Mayor Goodway",
-  "Switie",
+  "Swetie",
   "Captain Paltus",
   "Chickaletta",
 ];
