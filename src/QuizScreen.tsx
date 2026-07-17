@@ -2,10 +2,12 @@ import { useMemo, useState } from "react";
 import QuestionCard from "./QuestionCard";
 import ResultScreen from "./ResultScreen";
 import type { QuizPack, QuizResult } from "./types";
+import { quizPacks } from "./data";
 
 type QuizScreenProps = {
   pack: QuizPack;
   onGoHome: () => void;
+  showHomeButton?: boolean;
 };
 
 const initialScores = (pack: QuizPack) =>
@@ -14,7 +16,11 @@ const initialScores = (pack: QuizPack) =>
     number
   >;
 
-function QuizScreen({ pack, onGoHome }: QuizScreenProps) {
+function QuizScreen({
+  pack,
+  onGoHome,
+  showHomeButton = true,
+}: QuizScreenProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState<Record<string, number>>(
     {} as Record<string, number>,
@@ -124,9 +130,11 @@ function QuizScreen({ pack, onGoHome }: QuizScreenProps) {
               ← Назад
             </button>
 
-            <button className="home-btn" onClick={goHome}>
-              🏠 На главную
-            </button>
+            {quizPacks.length > 1 && (
+              <button className="home-btn" onClick={goHome}>
+                🏠 На главную
+              </button>
+            )}
           </div>
         </section>
       ) : (

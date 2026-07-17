@@ -1,3 +1,4 @@
+import { quizPacks } from "./data";
 import type { QuizResult } from "./types";
 
 type ResultScreenProps = {
@@ -26,9 +27,11 @@ function ResultScreen({ result, onRestart, onGoHome }: ResultScreenProps) {
         <button className="restart-btn" onClick={onRestart}>
           Ещё разок
         </button>
-        <button className="home-btn" onClick={onGoHome}>
-          На главную
-        </button>
+        {quizPacks.length > 1 && (
+          <button className="home-btn" onClick={onGoHome}>
+            🏠 На главную
+          </button>
+        )}
       </div>
     </section>
   );

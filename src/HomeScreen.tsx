@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { QuizPack } from "./types";
 
 type HomeScreenProps = {
@@ -6,6 +7,16 @@ type HomeScreenProps = {
 };
 
 function HomeScreen({ packs, onSelectPack }: HomeScreenProps) {
+  useEffect(() => {
+    if (packs.length === 1) {
+      onSelectPack(packs[0]);
+    }
+  }, [packs, onSelectPack]);
+
+  if (packs.length === 1) {
+    return null;
+  }
+
   return (
     <section className="home-screen">
       <h1>Выбери набор вопросов</h1>
