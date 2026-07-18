@@ -23,7 +23,7 @@ function QuizScreen({
 }: QuizScreenProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState<Record<string, number>>(
-    {} as Record<string, number>,
+    initialScores(pack),
   );
   const [answeredQuestions, setAnsweredQuestions] = useState<
     Array<{ questionIndex: number; scores: Partial<Record<string, number>> }>
