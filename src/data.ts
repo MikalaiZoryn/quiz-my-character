@@ -379,7 +379,7 @@ export const pawPatrolCitizenPriorities = [
 const pawPatrolCitizenPack: QuizPack = {
   id: "paw-patrol-citizen-pack",
   title: "Жители бухты приключений",
-  description: "Узнай, кто ты из друзей Щенячьего патруляю",
+  description: "Узнай, кто ты из друзей Щенячьего патруля.",
   questions: pawPatrolCitizenQuestions,
   results: pawPatrolCitizenResults,
   winnerPriority: pawPatrolCitizenPriorities,
