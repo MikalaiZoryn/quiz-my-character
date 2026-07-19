@@ -17,111 +17,96 @@ import type { QuizPack, QuizQuestion, QuizResult } from "./types";
 
 export const pawPatrolQuestions: QuizQuestion[] = [
   {
-    question: "Что тебе нравится больше всего?",
+    question: "Что тебе нравится больше?",
     options: [
       {
         text: "Играть в догонялки",
-        scores: { Chase: 2, Liberty: 1 },
+        scores: { Chase: 3, Liberty: 1 },
       },
       {
         text: "Веселиться в бассейне",
-        scores: { Zuma: 2, Everest: 1 },
+        scores: { Zuma: 3, Skye: 1 },
       },
       {
         text: "Строить из Лего",
-        scores: { Rubble: 2, Rocky: 1 },
-      },
-      {
-        text: "Искать сокровища",
-        scores: { Tracker: 2, Rocky: 1 },
-      },
-      {
-        text: "Танцевать под музыку",
-        scores: { Skye: 2, Marshall: 1 },
+        scores: { Rubble: 3, Rocky: 1 },
       },
     ],
   },
   {
-    question: "Куда ты больше любишь ездить с родителями?",
+    question: "Куда ты любишь ездить?",
     options: [
       {
         text: "На океан",
-        scores: { Zuma: 2, Skye: 1 },
+        scores: { Zuma: 3, Skye: 1 },
       },
       {
         text: "На хайк",
-        scores: { Tracker: 2, Everest: 1 },
+        scores: { Tracker: 3, Everest: 1 },
       },
       {
-        text: "В Сан-Франциско",
-        scores: { Liberty: 2, Skye: 1 },
-      },
-      {
-        text: "В парк с аттракционами",
+        text: "В парк аттракционовв",
         scores: { Marshall: 2, Liberty: 1 },
-      },
-      {
-        text: "В домик на дереве",
-        scores: { Rocky: 2, Tracker: 1 },
       },
     ],
   },
   {
-    question: "Если друг потерял игрушку, что ты сделаешь?",
+    question: "Друг потерял игрушку. Что ты сделаешь?",
     options: [
+      {
+        text: "Помогу найти",
+        scores: { Chase: 3, Tracker: 1 },
+      },
       {
         text: "Обниму его",
         scores: { Everest: 2, Skye: 1 },
       },
       {
-        text: "Предложу поиграть вместе",
-        scores: { Liberty: 2, Marshall: 1 },
-      },
-      {
-        text: "Помогу найти игрушку",
-        scores: { Chase: 2, Tracker: 1 },
-      },
-      {
-        text: "Рассмешу его",
-        scores: { Marshall: 2, Zuma: 1 },
-      },
-      {
         text: "Поделюсь своей игрушкой",
-        scores: { Rubble: 2, Rocky: 1 },
+        scores: { Rubble: 3, Marshall: 1 },
       },
     ],
   },
   {
-    question: "Каким тебя называют чаще всего?",
+    question: "Что тебе нравится делать?",
     options: [
       {
-        text: "Смелым",
-        scores: { Chase: 2, Everest: 1 },
+        text: "Рисовать",
+        scores: { Skye: 2, Rocky: 1 },
       },
       {
-        text: "Добрым",
-        scores: { Everest: 2, Marshall: 1 },
+        text: "Делать поделки",
+        scores: { Rocky: 3, Rubble: 1 },
       },
       {
-        text: "Весёлым",
+        text: "Танцевать",
         scores: { Marshall: 2, Liberty: 1 },
-      },
-      {
-        text: "Умным",
-        scores: { Rocky: 2, Tracker: 1 },
-      },
-      {
-        text: "Красивым",
-        scores: { Skye: 2, Liberty: 1 },
       },
     ],
   },
   {
-    question: "Что ты любишь есть больше всего?",
+    question: "Какой ты чаще всего?",
+    options: [
+      {
+        text: "Смелый",
+        scores: { Everest: 2, Chase: 1 },
+      },
+      {
+        text: "Весёлый",
+        scores: { Marshall: 3, Liberty: 1 },
+      },
+      {
+        text: "Спокойный",
+        scores: { Zuma: 2, Everest: 1 },
+      },
+    ],
+  },
+  {
+    question: "Что ты любишь есть?",
     options: [
       {
         text: "Пиццу",
-        scores: { Rubble: 2, Marshall: 1 },
+        scores: { Rubble: 3, Marshall: 1 },
       },
       {
         text: "Мороженое",
@@ -129,41 +114,24 @@ export const pawPatrolQuestions: QuizQuestion[] = [
       },
       {
         text: "Арбуз",
-        scores: { Tracker: 2, Zuma: 1 },
-      },
-      {
-        text: "Печенье",
-        scores: { Marshall: 2, Rubble: 1 },
-      },
-      {
-        text: "Чипсы",
-        scores: { Liberty: 2, Zuma: 1 },
+        scores: { Tracker: 3, Zuma: 1 },
       },
     ],
   },
   {
-    question: "Ты любишь играть…",
+    question: "Как ты любишь играть?",
     options: [
       {
-        text: "В большой компании друзей",
-        scores: { Liberty: 2, Marshall: 1 },
+        text: "Когда много друзей",
+        scores: { Liberty: 3, Marshall: 1 },
       },
       {
         text: "С одним другом",
         scores: { Skye: 2, Everest: 1 },
       },
-    ],
-  },
-  {
-    question: "Ты любишь…",
-    options: [
       {
-        text: "Знакомиться с новыми друзьями",
-        scores: { Liberty: 2, Zuma: 1 },
-      },
-      {
-        text: "Играть со старыми друзьями",
-        scores: { Tracker: 2, Skye: 1 },
+        text: "Что-нибудь строить самому",
+        scores: { Rocky: 2, Rubble: 1 },
       },
     ],
   },
@@ -172,37 +140,32 @@ export const pawPatrolQuestions: QuizQuestion[] = [
     options: [
       {
         text: "Снег",
-        scores: { Everest: 2, Tracker: 1 },
+        scores: { Everest: 3, Tracker: 1 },
       },
       {
         text: "Океан и песок",
-        scores: { Zuma: 2, Skye: 1 },
+        scores: { Zuma: 3, Skye: 1 },
+      },
+      {
+        text: "Большая шумная площадка",
+        scores: { Liberty: 3, Marshall: 2 },
       },
     ],
   },
   {
-    question: "Что тебе нравится больше?",
+    question: " Что ты выберешь?",
     options: [
       {
-        text: "Помогать маме",
-        scores: { Chase: 2, Everest: 1 },
+        text: "Знакомиться с новыми друзьями",
+        scores: { Liberty: 2, Marshall: 1 },
       },
       {
-        text: "Придумывать новые игры",
-        scores: { Rocky: 2, Liberty: 1 },
-      },
-    ],
-  },
-  {
-    question: "Что ты больше любишь?",
-    options: [
-      {
-        text: "Бегать",
-        scores: { Chase: 2, Marshall: 1 },
+        text: " Искать сокровища",
+        scores: { Tracker: 3, Rocky: 1 },
       },
       {
-        text: "Рисовать",
-        scores: { Skye: 2, Rocky: 1 },
+        text: "Играть в воде",
+        scores: { Zuma: 3, Everest: 1 },
       },
     ],
   },
@@ -290,78 +253,78 @@ const pawPatrolCitizenQuestions: QuizQuestion[] = [
   {
     question: "Что бы ты взял с собой в путешествие?",
     options: [
-      { text: "Собаку", scores: { Ryder: 2, Katie: 1 } },
-      { text: "Птичку", scores: { "Mayor Goodway": 2, Chickaletta: 1 } },
+      { text: "Собачку", scores: { Ryder: 3, Katie: 1 } },
       { text: "Корону", scores: { Swetie: 3, "Mayor Goodway": 1 } },
-      { text: "Кораблик", scores: { "Captain Paltus": 2, Ryder: 1 } },
-      { text: "Игрушку", scores: { Chickaletta: 2, Swetie: 1 } },
-      { text: "Сладости", scores: { Chickaletta: 2, "Mayor Goodway": 1 } },
+      { text: "Кораблик", scores: { "Captain Paltus": 3, Chickaletta: 1 } },
     ],
   },
   {
-    question: "Какое задание ты бы выбрал?",
+    question: "Какое задание ты выберешь?",
     options: [
       {
         text: "Помочь другу в беде",
-        scores: { Ryder: 2, "Captain Paltus": 1 },
+        scores: { Ryder: 3, Katie: 1 },
       },
       {
         text: "Позаботиться о животных",
-        scores: { Katie: 2, "Captain Paltus": 1 },
-      },
-      {
-        text: "Помочь взрослым украсить праздник",
-        scores: { "Mayor Goodway": 2, Katie: 1 },
+        scores: { Katie: 3, "Captain Paltus": 1 },
       },
       {
         text: "Отправиться в путешествие",
         scores: { "Captain Paltus": 2, Chickaletta: 1 },
       },
-      { text: "Играть целый день", scores: { Chickaletta: 2, Swetie: 1 } },
-      { text: "Устроить бал", scores: { Swetie: 3, "Mayor Goodway": 1 } },
     ],
   },
   {
-    question: "Что тебе нравится больше?",
+    question: "Что тебе нравится делать?",
     options: [
-      { text: "Играть с животными", scores: { Katie: 2, "Captain Paltus": 1 } },
-      { text: "Командовать", scores: { Ryder: 2, "Mayor Goodway": 1 } },
-      {
-        text: "Исследовать новые места",
-        scores: { "Captain Paltus": 2, Chickaletta: 1 },
-      },
       { text: "Красиво одеваться", scores: { Swetie: 3, Chickaletta: 1 } },
-      { text: "Помогать другим", scores: { Ryder: 2, Katie: 1 } },
       {
         text: "Устраивать праздники",
-        scores: { "Mayor Goodway": 2, Swetie: 1 },
+        scores: { "Mayor Goodway": 3, Swetie: 1 },
+      },
+      {
+        text: "Играть целый день",
+        scores: { Chickaletta: 3, Ryder: 1 },
       },
     ],
   },
   {
-    question: "Что тебе нравится больше?",
+    question: "Как ты любишь проводить время?",
     options: [
       {
         text: "Путешествовать",
-        scores: { "Captain Paltus": 2, Chickaletta: 1 },
+        scores: { "Captain Paltus": 3, Chickaletta: 1 },
       },
       { text: "Играть дома", scores: { Katie: 2, Swetie: 1 } },
-    ],
-  },
-  {
-    question: "Что тебе нравится больше?",
-    options: [
       { text: "Играть с друзьями", scores: { Ryder: 2, Chickaletta: 1 } },
-      { text: "Ходить в зоопарк", scores: { Katie: 2, "Captain Paltus": 1 } },
     ],
   },
   {
-    question: "Что тебе нравится больше?",
+    question: "Куда бы ты хотел пойти?",
     options: [
-      { text: "Быть главным", scores: { Ryder: 2, "Mayor Goodway": 1 } },
+      { text: "В зоопарк", scores: { Katie: 2, "Captain Paltus": 1 } },
       {
-        text: "Играть всей командой",
-        scores: { Ryder: 2, "Captain Paltus": 1 },
+        text: "На день рождения друга",
+        scores: { Chickaletta: 2, "Mayor Goodway": 1 },
+      },
+      {
+        text: "В музей",
+        scores: { "Mayor Goodway": 2, Ryder: 1 },
+      },
+    ],
+  },
+  {
+    question: "Кем ты хочешь быть в игре?",
+    options: [
+      { text: " Капитаном команды", scores: { Ryder: 3, "Captain Paltus": 2 } },
+      {
+        text: "Принцем или принцессой",
+        scores: { Swetie: 3, "Mayor Goodway": 1 },
+      },
+      {
+        text: "Путешественником",
+        scores: { "Captain Paltus": 3, Chickaletta: 1 },
       },
     ],
   },
@@ -416,7 +379,7 @@ export const pawPatrolCitizenPriorities = [
 const pawPatrolCitizenPack: QuizPack = {
   id: "paw-patrol-citizen-pack",
   title: "Жители бухты приключений",
-  description: "Узнай, на какого жителя бухты приключений ты похож.",
+  description: "Узнай, кто ты из друзей Щенячьего патруляю",
   questions: pawPatrolCitizenQuestions,
   results: pawPatrolCitizenResults,
   winnerPriority: pawPatrolCitizenPriorities,
